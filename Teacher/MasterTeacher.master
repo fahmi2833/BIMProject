@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterTeacher.master.cs" Inherits="Teacher_MasterTeacher" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style9 {
+            width: 100%;
+        }
+        .auto-style10 {
+            width: 287px;
+        }
+        .newStyle16 {
+            color: #FFFFFF;
+            background-color: #003366;
+        }
+        .auto-style11 {
+            width: 293px;
+            height: 280px;
+        }
+        .auto-style13
+        {
+            color: #FFFFFF;
+            background-color: #003366;
+            width: 20%;
+        }
+        .auto-style14
+        {
+            width: 20%;
+            height: 201px;
+            text-align: center;
+        }
+        .auto-style15
+        {
+            width: 244px;
+            height: 251px;
+        }
+        .newStyle17
+        {
+            vertical-align: top;
+            padding: inherit;
+            top: auto;
+            clip: rect(auto, auto, auto, auto);
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="auto-style9">
+        <tr>
+            <td class="auto-style13">
+                <asp:TreeView ID="TreeView1" runat="server" Height="153px" ImageSet="XPFileExplorer" NodeIndent="15" Width="282px">
+                    <HoverNodeStyle BackColor="White" Font-Underline="True" ForeColor="#003366" />
+                    <LeafNodeStyle Font-Bold="True" Font-Size="Smaller" ForeColor="White" HorizontalPadding="10px" />
+                    <Nodes>
+                        <asp:TreeNode Text="TEACHER" Value="CHAIRMAN" NavigateUrl="~/Teacher/Default.aspx">
+                            <asp:TreeNode Text="Teacher Profile" Value="Manage Teachers" NavigateUrl="~/Teacher/TeacherPorfile.aspx">
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Manage Score" Value="Manage Score" NavigateUrl="~/Teacher/Manage Score.aspx"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Teacher/TeacherSubject.aspx" Text="Cources Detials" Value="Cources Detials"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                    <NodeStyle Font-Bold="True" Font-Names="Tahoma" Font-Size="Larger" ForeColor="White" HorizontalPadding="10px" NodeSpacing="0px" VerticalPadding="2px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle BackColor="#B5B5B5" Font-Bold="False" Font-Underline="False" HorizontalPadding="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+            </td>
+            <td rowspan="2" class="newStyle17">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <asp:Panel ID="Panel1" runat="server">
+                        <br />
+                    </asp:Panel>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style14">
+                <img class="auto-style15" src="Imag/teagher-1.jpg" /></td>
+        </tr>
+    </table>
+</asp:Content>
+

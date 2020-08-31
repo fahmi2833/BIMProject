@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .newStyle1 {
+            background-color: #003366;
+        }
+        .newStyle2 {
+            background-color: #003366;
+        }
+        .newStyle3 {
+            background-color: #003366;
+        }
+        .newStyle4 {
+            background-color: #FFFFFF;
+        }
+        .newStyle5 {
+            background-color: #003366;
+        }
+        .newStyle6 {
+            background-color: #003366;
+        }
+        .newStyle7
+        {
+            background-image: url('/WebSite1/Imag/red_repicthousebase_1484336386-1.png');
+        }
+        .newStyle8 {
+            background-color: #003366;
+        }
+        .auto-style4 {
+            width: 81px;
+            height: 55px;
+            text-align: center;
+        }
+        .auto-style5 {
+            width: 73%;
+            height: 55px;
+            text-align: center;
+        }
+        .newStyle9 {
+            color: #FFFFFF;
+            background-color: #003366;
+        }
+        .newStyle10 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .newStyle11 {
+            background-color: #003366;
+            color: #FFFFFF;
+        }
+        .newStyle12 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .newStyle13 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+            background-color: #003366;
+        }
+        .auto-style7 {
+            font-size: small;
+            text-align: right;
+        }
+        .newStyle14 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .newStyle15 {
+            border: thin inset #003366;
+        }
+        .auto-style8 {
+            color: #FFFFFF;
+            background-color: #003366;
+            text-align: justify;
+        }
+        .auto-style10
+        {
+            width: 100%;
+            height: 427px;
+        }
+        .auto-style11
+        {
+            width: 85px;
+            height: 64px;
+        }
+        .auto-style12
+        {
+            width: 883px;
+            height: 64px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="border: thin inset #003366">
+        <div>
+            <table class="auto-style10" >
+                <tr>
+                    <td class="auto-style4">
+                        <img alt="" class="auto-style11" src="Imag/log45.png" /></td>
+                    <td class="auto-style5">
+                        <img alt="" class="auto-style12" src="Imag/21345.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" colspan="2" >
+                       
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" >
+                           <Items>
+                                <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/default.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="About Higher Professional Education " Value="About Higher Professional Education " NavigateUrl="~/AboutHPEaspx.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Facilities" Value="Facilities" NavigateUrl="~/Facilities.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Curriculum" Value="Curriculum" NavigateUrl="~/Curriculum.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/US.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="LOGIN" Value="LOGIN" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="White" ForeColor="#003366" />
+                            <StaticMenuItemStyle Font-Bold="True" Font-Size="Large" ForeColor="White" HorizontalPadding="10px" />
+                        </asp:Menu>
+                           
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <asp:Panel ID="Panel1" runat="server">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            </asp:Panel>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr class="newStyle13">
+                    <td class="auto-style7" colspan="2"><span class="newStyle14"><strong>&nbsp;&nbsp; © 2018 R-A-M-S | All Right Reserved/tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </table>
+        </div>
+    </form>
+    </body>
+</html>
